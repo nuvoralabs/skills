@@ -1,10 +1,10 @@
 {
   "name": "nuvora-sentinel",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Build, review and debug identity, authentication and authorization on Nuvora Nexus Sentinel — working from the live docs at sentinel.nuvoralabs.com.",
   "author": {
     "name": "Nuvora Labs",
-    "url": "https://github.com/nuvoralabs"
+    "url": "https://nuvoralabs.com"
   },
   "homepage": "https://sentinel.nuvoralabs.com",
   "repository": "https://github.com/nuvoralabs/skills",

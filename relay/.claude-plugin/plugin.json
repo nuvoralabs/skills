@@ -1,10 +1,10 @@
 {
   "name": "nuvora-relay",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Build, review and debug .NET services on Nuvora Nexus Relay — DDD, CQRS and event sourcing — working from the live docs at relay.nuvoralabs.com.",
   "author": {
     "name": "Nuvora Labs",
-    "url": "https://github.com/nuvoralabs"
+    "url": "https://nuvoralabs.com"
   },
   "homepage": "https://relay.nuvoralabs.com",
   "repository": "https://github.com/nuvoralabs/skills",
