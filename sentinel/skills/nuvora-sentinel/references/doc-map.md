@@ -1,6 +1,6 @@
 # Nuvora Nexus Sentinel — documentation map
 
-Snapshot of <https://sentinel.nuvoralabs.com/llms.txt>, taken 2026-08-14. It is a **fast path, not
+Snapshot of <https://sentinel.nuvoralabs.com/llms.txt>, taken 2026-08-14 (refreshed). It is a **fast path, not
 the source of truth**. The live index always wins:
 
 ```bash
@@ -17,7 +17,6 @@ Articles are paired with sample projects under
 lives at <https://sentinel.nuvoralabs.com/agent.md>.
 
 ---
-
 
 > Sentinel is a batteries-included, embeddable, code-first identity provider, authentication, and authorization platform for .NET. This site is its documentation portal: reference docs, hands-on tutorial articles (each paired with a runnable sample), the generated API reference, and security recipes that map real attack classes to the mechanisms that counter them.
 
@@ -47,6 +46,7 @@ Every page below is available as clean Markdown at the linked `.md` URL. A singl
 - [Nuvora.Nexus.Sentinel](https://sentinel.nuvoralabs.com/api/nuvora-nexus-sentinel.md): Sentinel entry point: AddSentinel() dependency-injection wiring, options, and startup guards. Sentinel is a batteries-included, embeddable identity provider, authentication, and authorization platform for .NET.
 - [Nuvora.Nexus.Sentinel.Core](https://sentinel.nuvoralabs.com/api/nuvora-nexus-sentinel-core.md): Framework-free domain core for Sentinel: permission grammar, authorization evaluator, policy engine, identity model, and ports. No web framework, no storage dependencies.
 - [Nuvora.Nexus.Sentinel.AspNetCore](https://sentinel.nuvoralabs.com/api/nuvora-nexus-sentinel-aspnetcore.md): ASP.NET Core surface for Sentinel: the "Sentinel" authentication handler (Bearer + httpOnly cookie with CSRF double-submit), the request principal/context accessor, and mountable minimal-API endpoint groups (MapSentinelAuth, MapSentinelProfile).
+- [Nuvora.Nexus.Sentinel.Authorization.AspNetCore](https://sentinel.nuvoralabs.com/api/nuvora-nexus-sentinel-authorization-aspnetcore.md): Microsoft.AspNetCore.Authorization integration for Sentinel: [SentinelPermission] on controllers and minimal APIs, permission ids usable directly as [Authorize(Policy)], resource-scoped AuthorizeAsync, list visibility, and a role-compatibility shim for migrating from stock ASP.NET authorization.
 - [Nuvora.Nexus.Sentinel.OidcServer](https://sentinel.nuvoralabs.com/api/nuvora-nexus-sentinel-oidcserver.md): In-house OAuth2/OIDC authorization server for Sentinel (no OpenIddict): discovery, JWKS, authorization code + PKCE, client credentials, refresh token grants, userinfo, revocation (RFC 7009), introspection (RFC 7662), RP-initiated + back-channel logout, client registry and consent — with a host-app interaction contract for login and consent UI.
 - [Nuvora.Nexus.Sentinel.Saml](https://sentinel.nuvoralabs.com/api/nuvora-nexus-sentinel-saml.md): SAML 2.0 for Sentinel, both sides: SP-initiated inbound SSO against external IdPs with hardened XML-DSig validation, and Sentinel-as-IdP issuing signed assertions to a registered SP registry with attribute mapping, metadata and redirect/POST bindings.
 - [Nuvora.Nexus.Sentinel.Scim](https://sentinel.nuvoralabs.com/api/nuvora-nexus-sentinel-scim.md): SCIM 2.0 provisioning server for Sentinel: per-organization bearer-token auth, Users AND Groups (fixes the Node version's users-only gap), the standard filter subset, and RFC 7644 PATCH — mounted with MapSentinelScim().
@@ -72,6 +72,7 @@ Every page below is available as clean Markdown at the linked `.md` URL. A singl
 
 ### Authorization Engine
 - [002 — The permission grammar, evaluated](https://sentinel.nuvoralabs.com/articles/permission-grammar-and-evaluation.md): Learn service:scope:action from the inside — patterns and wildcards, deny-overrides, org/team/self scoping, ABAC conditions, and the golden vectors that make the server and the browser agree.
+- [021 — Migrating ASP.NET authorization](https://sentinel.nuvoralabs.com/articles/aspnet-authorization.md): Point your existing [Authorize(Policy = "…")] attributes at Sentinel's evaluator with one registration, then move endpoint by endpoint to checks that know which record the request is about.
 
 ### Tokens & Sessions
 - [003 — Refresh-token families](https://sentinel.nuvoralabs.com/articles/refresh-token-families.md): Why every refresh rotates, what a token family is, and how replaying a stolen token detonates the whole lineage — with the exact service, store contract and tests behind it.
