@@ -1,0 +1,35 @@
+{
+  "name": "nuvoralabs",
+  "owner": {
+    "name": "Nuvora Labs",
+    "url": "https://github.com/nuvoralabs"
+  },
+  "metadata": {
+    "description": "Claude Code skills for the Nuvora Nexus platform.",
+    "version": "0.1.0"
+  },
+  "plugins": [
+    {
+      "name": "nuvora-relay",
+      "source": "./relay",
+      "description": "Build, review and debug .NET services on Nuvora Nexus Relay — DDD, CQRS and event sourcing — working from the live docs at relay.nuvoralabs.com.",
+      "version": "0.1.0",
+      "author": { "name": "Nuvora Labs" },
+      "homepage": "https://relay.nuvoralabs.com",
+      "license": "MIT",
+      "category": "development",
+      "keywords": ["dotnet", "cqrs", "ddd", "event-sourcing", "relay", "nuvora"]
+    },
+    {
+      "name": "nuvora-sentinel",
+      "source": "./sentinel",
+      "description": "Build, review and debug identity, authentication and authorization on Nuvora Nexus Sentinel — working from the live docs at sentinel.nuvoralabs.com.",
+      "version": "0.1.0",
+      "author": { "name": "Nuvora Labs" },
+      "homepage": "https://sentinel.nuvoralabs.com",
+      "license": "MIT",
+      "category": "security",
+      "keywords": ["dotnet", "identity", "oidc", "saml", "scim", "authorization", "sentinel", "nuvora"]
+    }
+  ]
+}

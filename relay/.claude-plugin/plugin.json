@@ -1,0 +1,13 @@
+{
+  "name": "nuvora-relay",
+  "version": "0.1.0",
+  "description": "Build, review and debug .NET services on Nuvora Nexus Relay — DDD, CQRS and event sourcing — working from the live docs at relay.nuvoralabs.com.",
+  "author": {
+    "name": "Nuvora Labs",
+    "url": "https://github.com/nuvoralabs"
+  },
+  "homepage": "https://relay.nuvoralabs.com",
+  "repository": "https://github.com/nuvoralabs/skills",
+  "license": "MIT",
+  "keywords": ["dotnet", "cqrs", "ddd", "event-sourcing", "relay", "nuvora"]
+}
